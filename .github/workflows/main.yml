@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - run: mkdir -p ~/artfacts
+    - run: mkdir -p ~/artifacts
 
     - run: echo hello > ~/artifacts/world.txt
 
