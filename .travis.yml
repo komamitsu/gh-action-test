@@ -1,2 +1,2 @@
 script:
-  - echo $MY_SECRET | head
+  - env | grep MY_SECRET
