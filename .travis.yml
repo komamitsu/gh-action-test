@@ -1,2 +1,2 @@
 script:
-  - echo ${#MY_SECRET}
+  - echo $MY_SECRET
