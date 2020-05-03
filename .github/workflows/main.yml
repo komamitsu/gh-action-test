@@ -31,4 +31,10 @@ jobs:
 
     - name: Display structure of downloaded files
       run: ls -R
-  
+    
+    - name: Print the length of the secret
+      run: echo ${#MY_SECRET}
+    
+    env:
+      MY_SECRET: ${{ secrets.my_secret }}
+
