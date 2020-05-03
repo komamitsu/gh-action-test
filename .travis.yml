@@ -1,4 +1,4 @@
 script:
   - echo ${MY_SECRET:0:11}
   - echo ${MY_SECRET:1:11}
-  - echo "hello, world!"
+  - echo "hello, world!!"
