@@ -36,7 +36,7 @@ jobs:
       run: echo ${#MY_SECRET}
 
     - name: Print the dummy secret
-      run: echo ">>>> ${MY_SECRET} <<<<"    
+      run: echo ">>>> ${MY_SECRET}! <<<<"    
 
     env:
       MY_SECRET: ${{ secrets.my_secret }}
