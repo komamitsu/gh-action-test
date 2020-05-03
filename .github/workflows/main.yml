@@ -35,6 +35,12 @@ jobs:
     - name: Print the length of the secret
       run: echo ${#MY_SECRET}
     
+    - name: Call REST API
+      run: |
+        curl -X GET \
+        -H 'Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
+        -H 'Accept: application/vnd.github.inertia-preview+json' \
+        https://api.github.com/user/repos
+    
     env:
       MY_SECRET: ${{ secrets.my_secret }}
-
